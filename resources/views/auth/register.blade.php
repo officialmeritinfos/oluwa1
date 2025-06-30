@@ -118,7 +118,7 @@
 
                                 <strong>ReCaptcha:</strong>
 
-                                <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                                <div class="g-recaptcha" data-sitekey="{{ config('app.captcha_key') }}"></div>
 
                                 @if ($errors->has('g-recaptcha-response'))
 

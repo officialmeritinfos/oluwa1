@@ -29,6 +29,8 @@ return [
     'env' => env('APP_ENV', 'production'),
     'companyLicence' => env('COMPANY_LICENSE', '07051271'),
     'companyAddress' => env('COMPANY_ADDRESS', '377 Evans Ave. Unit 101, Etobicoke, ON M8Z 1K8, Canada'),
+    'captcha_secret' => env('GOOGLE_RECAPTCHA_SECRET'),
+    'captcha_key' => env('GOOGLE_RECAPTCHA_KEY'),
 
     /*
     |--------------------------------------------------------------------------
@@ -233,5 +235,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+
 
 ];

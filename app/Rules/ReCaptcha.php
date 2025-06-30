@@ -28,13 +28,14 @@ class ReCaptcha implements Rule
     {
         $response = Http::get("https://www.google.com/recaptcha/api/siteverify",[
 
-            'secret' => env('GOOGLE_RECAPTCHA_SECRET'),
+            'secret' => config('app.captcha_secret'),
 
             'response' => $value
 
         ]);
 
 
+        logger($response);
 
         return $response->json()["success"];
     }
