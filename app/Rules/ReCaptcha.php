@@ -35,7 +35,6 @@ class ReCaptcha implements Rule
         ]);
 
 
-        logger($response);
 
         return $response->json()["success"];
     }
