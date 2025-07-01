@@ -70,7 +70,7 @@ class Login extends Controller
                     $dataUser = [
                         'twoWayPassed'=>1
                     ];
-                    $message = "Login successful.";
+                    $message = "Welcome," . " $user->name";
                     if ($user->is_admin ==1){
                         $url = route('admin.admin.dashboard');
                     }else {
