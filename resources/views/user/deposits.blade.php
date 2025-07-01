@@ -32,16 +32,16 @@
                             <td>
                                 @switch($deposit->status)
                                     @case(1)
-                                    <span class="badge badge-success">Completed</span>
+                                    <span class="badge bg-success">Completed</span>
                                     @break
                                     @case(2)
-                                    <span class="badge badge-info">Pending</span>
+                                    <span class="badge bg-info">Pending</span>
                                     @break
                                     @case(3)
-                                    <span class="badge badge-danger">Cancelled</span>
+                                    <span class="badge bg-danger">Cancelled</span>
                                     @break
                                     @default
-                                    <span class="badge badge-dark">Partial Payment</span>
+                                    <span class="badge bg-dark">Partial Payment</span>
                                     @break
                                 @endswitch
                             </td>
