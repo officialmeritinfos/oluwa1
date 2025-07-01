@@ -1,6 +1,16 @@
 @extends('user.base')
 @section('content')
 @inject('injected','App\Defaults\Custom')
+<div class="welcome-section p-4 mb-4 rounded-3 bg-light border shadow-sm mb-5">
+    <div class="container-fluid py-2">
+        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
+            <div>
+                <h4 class="mb-1 text-dark">Welcome back, <span class="text-primary fw-bold">{{ $user->username }}</span> 👋</h4>
+                <p class="mb-0 text-muted">Here’s a quick overview of your account and recent activity. Keep going, greatness awaits.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     @foreach($promos as $promo)

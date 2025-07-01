@@ -32,6 +32,13 @@
     <link rel="icon" type="image/png" href="{{asset('home/images/'.$web->logo)}}">
     <!-- Title -->
     <title>{{$pageName}} - {{$siteName}}</title>
+    <style>
+        .welcome-section {
+            background: linear-gradient(145deg, #ffffff, #f3f3f3);
+            border: 1px solid #e5e7eb;
+        }
+
+    </style>
 </head>
 
 <body class="body-bg-f5f5f5">

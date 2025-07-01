@@ -135,18 +135,8 @@
                                             <li><a href="{{url('privacy')}}">Privacy policy</a></li>
                                         </ul>
                                     </li>
-
-                                    <li class="dropdown"><a href="#">Panel</a>
-                                        <ul>
-                                            @guest
-                                                <li><a href="{{route('login')}}" >Login</a></li>
-                                                <li><a href="{{route('register')}}">Register</a></li>
-                                            @endguest
-                                            @auth
-                                                <li><a href="{{route('user.dashboard')}}" >Dashboard</a></li>
-                                            @endauth
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{route('register')}}">Register</a></li>
+                                    <lizz><a href="{{route('login')}}">Login</a></lizz>
                                     <li><a href="{{url('contact')}}">Contact Us</a></li>
                                 </ul>
                             </div>
