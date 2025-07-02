@@ -28,7 +28,7 @@ class Register extends Controller
             'web'=>$web,
             'siteName'=>$web->name,
             'pageName'=>'Account Registration',
-            'referral'=>Cache::get('referral')??'',
+            'referral'=>$request->get('referral')??'',
         ];
 
         return view('auth.register',$dataView);
